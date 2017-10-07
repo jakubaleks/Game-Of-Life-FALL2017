@@ -16,7 +16,7 @@
    				<td><button type="button">stop</button></td>
   		   	   	<td><button type="button">inc 1 gen</button></td>
   		   		<td><button type="button">inc 23 gen</button></td>
-  		   		<td><button type="button">reset </button></td>
+  		   		<td><button onclick="reset()">reset </button></td>
   		   </tr>
 		</table>
   	
@@ -25,7 +25,7 @@
 			for(i=0;i<rows;i++){
 				document.write("<tr>");
 				for(j=0;j<cols;j++){
-					document.write("<td class=empty id = " + i + "" + j +" onclick=\x22changeImage('" + i + "" +j+ "')\x22> </td>");
+					document.write("<td class=empty id = " + i + "." + j +" onclick=\x22changeImage('" + i + "." +j+ "')\x22> </td>");
 				}
 				document.write("</tr>");
 			}
